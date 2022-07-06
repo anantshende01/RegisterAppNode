@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+
+    <style type="text/css">
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 3vw;
+        }
+        
+        input {
+            width: 15%;
+            height: 25px;
+        }
+        
+        .heading {
+            padding: 0px 5px 20px 5px;
+        }
+        
+        label {
+            font-size: 2vw;
+            color: rgb(197, 107, 107);
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        input[type="submit"] {
+            width: 8%;
+            background-color: aqua;
+            color: black;
+        }
+        
+        form {
+            text-align: center;
+        }
+        
+        a {
+            color: burlywood;
+            padding: 1px;
+            margin-top: 30px;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        
+        .error {
+            color: rgb(124, 72, 72);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <p class="heading">Register For the 7 days MERN Stack Bootcamp</p>
+    </center>
+    <center>
+        <p class="error">
+            <%=msg%>
+        </p>
+    </center>
+    <form action="/" method="post">
+        <label for="name">Enter your name</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+        <br>
+        <label for="dob">Enter your dob</label>
+        <br>
+        <input type="date" name="dob" id="dob" placeholder="Date of Birth" required>
+        <br>
+        <label for="email">Enter your email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <hr>
+    <center><a href="/students">Registered students</a></center>
+
+
+</body>
+
+</html>
